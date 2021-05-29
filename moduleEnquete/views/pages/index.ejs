@@ -1,0 +1,367 @@
+<%- include('header') -%> 
+<form action="/" method="POST" class="ui form" name="quizForm" onsubmit="return submitAnswers()">
+    
+    <h1>Veillez répondre à ces questions </h1>
+        <div class="ui form">  
+            <div class="grouped fields">
+                <div class="question">
+                    
+                    <h3>
+                        1. Comment qualifiez-vous la charge du travail demandée par le cours <br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q1" id="rep1q1" value="2" class="field ui radio checkbox"/> 
+                            <label for="rep1q1">Beaucoup trop importante</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="q1" id="rep2q1" value="2" class="field ui radio checkbox"/> 
+                            <label for="rep2q1">Trop importante</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="q1" id="rep3q1" value="0" /> 
+                            <label for="rep3q1">Un peu trop importante</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="q1" id="rep4q1" value="0" /> 
+                            <label for="rep4q1">Ni trop importante ni trop insuffisante</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="q1" id="rep5q1" value="0" /> 
+                            <label for="rep5q1">Un peu trop insuffisante</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="q1" id="rep6q1" value="0" /> 
+                            <label for="rep6q1">Trop insuffisante</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="q1" id="rep7q1" value="0" /> 
+                            <label for="rep7q1">beaucoup trop insuffisante</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <h3>
+                        2. Le cours a t-il répondu à vos attentes ? <br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q2" id="rep1q2" value="2"/>
+                            <label for="rep1q2">Exactement bien répondu</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q2" id="rep2q2" value="2" /> <label for="rep2q2">Très bien répondu </label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q2" id="rep3q2" value="0" /> <label for="rep3q2">Assez bien repondu</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q2" id="rep3q2" value="0" /> <label for="rep3q2">Assez bien repondu</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q2" id="rep4q2" value="0" /> <label for="rep4q2">Peu répondu</label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q2" id="rep5q2" value="0" /> <label for="rep5q2">Pas du tout répondu</label>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="question">
+                    <h3>
+                        3. Le cours a t-il contribué à votre connaissance en la matière ? <br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q3" id="rep1q3" value="2" /> <label for="rep1q3">Enormément contribué</label>
+                        </div>
+                    </div> 
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q3" id="rep2q3" value="2" /> <label for="rep2q3">Beaucoup contribué</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q3" id="rep3q3" value="0" /> <label for="rep3q3">Plutôt contribué</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q3" id="rep4q3" value="0" /> <label for="rep4q3">Peu contribué</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q3" id="rep5q3" value="0" /> <label for="rep5q3">Pas du tout contribué</label>
+                        </div>
+                    </div>      
+                </div>
+                <div class="question">
+                    <h3>
+                        4. Comment qualifieriez-vous le cours ? <br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep1q4" value="3" /> <label for="rep1q4">Extrêmement facile</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep2q4" value="2" /> <label for="rep2q4">Très facile</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep3q4" value="0" /><label for="rep3q4">Assez facile</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep4q4" value="0" /> <label for="rep4q4">Ni facile ni difficile</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep5q4" value="0" /> <label for="rep5q4">Assez difficile</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep6q4" value="0" /> <label for="rep6q4">Très difficile </label>
+                        </div>
+                    </div>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q4" id="rep7q4" value="0" /> <label for="rep7q4">Extrêmement difficile</label>
+                        </div>
+                    </div>   
+
+                </div>
+                <div class="question">
+                    <h3>
+                        5. Que pensez-vous du rythme du cours ?  <br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep1q5" value="3"/> <label for="rep1q5">Beaucoup trop rapide</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep2q5" value="2"/> <label for="rep2q5">Trop rapide</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep3q5" value="0"/> <label for="rep3q5">Un peu trop rapide</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep4q5" value="0"/> <label for="rep4q5">Ni trop rapide ni trop lent</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep5q5" value="0"/> <label for="rep5q5">Un peu trop lent</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep6q5" value="0"/> <label for="rep6q5">Trop lent</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q5" id="rep7q5" value="0"/> <label for="rep7q5">beaucoup trop lent</label>
+                        </div>
+                    </div>     
+                </div>
+                <div class="question">
+                    <h3>
+                        6. Pensez-vous que les supports utilisés(support papier, présentation) durant le cours ont été utiles ?<br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q6" id="rep1q6" value="2"/> <label for="rep1q6">Extrêmement utiles</label>
+                        </div>
+                    </div>     
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q6" id="rep2q6" value="2"/> <label for="rep2q6">Très utiles</label>
+                        </div>
+                    </div>     
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q6" id="rep3q6" value="0"/> <label for="rep3q6">Assez utiles</label>
+                        </div>
+                    </div>     
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q6" id="rep4q6" value="0"/> <label for="rep4q6">Peu utiles</label>
+                        </div>
+                    </div>     
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q6" id="rep5q6" value="0"/> <label for="rep5q6">Pas du tout utiles</label>
+                        </div>
+                    </div>     
+                </div>
+                <div class="question">
+                    <h3>
+                        7. Quelle est la probabilité que vous recommendiez le cours à d'autres étudiants ?<br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q7" id="rep1q7" value="2"/> <label for="rep1q7">Extrêmement probable</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q7" id="rep2q7" value="2"/> <label for="rep2q7">Fortement probable</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q7" id="rep3q7" value="0"/> <label for="rep3q7">Modérément probable</label>
+                        </div>
+                    </div>  
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q7" id="rep4q7" value="0"/> <label for="rep4q7">Peu probable</label>
+                        </div>
+                    </div> 
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q7" id="rep5q7" value="0"/> <label for="rep5q7">Pas du tout probable</label>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="question">
+                    <h3>
+                        8. Dans l'ensemble êtes-vous safisfait(e) du contenu du cours ?<br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep1q8" value="2"/> <label for="rep1q8">Extrêmement safisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep2q8" value="2"/> <label for="rep2q8">Très safisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep3q8" value="0"/> <label for="rep3q8">Assez safisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep4q8" value="0"/> <label for="rep4q8">Ni safisfait(e) ni insafisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep5q8" value="0"/> <label for="rep5q8">Assez insafisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep6q8" value="0"/> <label for="rep6q8">Très insafisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q8" id="rep7q8" value="0"/> <label for="rep7q8">Extrêmement insafisfait(e)</label>
+                        </div>
+                    </div>    
+                </div>
+                <div class="question">
+                    <h3>
+                        9. Dans l'ensemble, quel est votre degré de satisfaction concernant le cours ? <br/>
+                    </h3>
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep1q9" value="2"/> <label for="rep1q9">Extrêmement satisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep2q9" value="2"/> <label for="rep2q9">Très satisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep3q9" value="0"/> <label for="rep3q9">Assez satisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep4q9" value="0"/> <label for="rep4q9">Ni satisfait(e) ni insatisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep5q9" value="0"/> <label for="rep5q9">Assez insatisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep6q9" value="0"/> <label for="rep6q9">Très insatisfait(e)</label>
+                        </div>
+                    </div>   
+                    <div class="field"> 
+                        <div class="ui radio checkbox ">
+                            <input type="radio" name="q9" id="rep7q9" value="0"/> <label for="rep7q9">Extrêmement insatisfait(e)</label>
+                        </div>
+                    </div>   
+                </div>
+
+
+                <div class="field">
+                    <label for="commentaire">Commentaire</label>
+                    <textarea name="commentaire" id="commentaire"></textarea>
+                </div>
+                <% if (locals.flash && locals.flash.error) { %>
+                    <div class="ui negative message">
+                        <%= flash.error %> 
+                    </div>
+                <% } %>
+                <% if (locals.flash && locals.flash.success) { %>
+                    <div class="ui positive message">
+                        <%= flash.success %> 
+                    </div>
+                <% } %>
+                <button type="submit" class="ui blue labeled submit icon button" >
+                    <i class="icon edit"></i>Envoyer
+                </button>
+            </div> 
+        </div>
+</form>
+
+<%- include('footer') -%> 
+
+
