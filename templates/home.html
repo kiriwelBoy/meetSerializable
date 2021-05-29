@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>MeetSerializer</h1>
+  <h3><small> BIENVENUE , {{ session.username }}</small> </h3>
+  <form>
+    <input type = "button" value = "Retour!" style="color:black "  onclick = "history.back()">
+  </form>
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>Nom Classe</th>
+      <th>Action</th>
+    </tr>
+    {% for row in classes %}
+      <tr>
+        <td style="color:black;">{{ row.1 }}</td>
+        <td> <a href="/seances/{{ row.0}}" class="btn btn-primary pullright">Voir seances</a> </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

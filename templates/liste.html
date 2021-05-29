@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Liste de presence</h1>
+  <h3><small> Welcome, {{ session.username }}</small> </h3>
+  <form>
+    <input type = "button" value = "Retour!" style="color:black "  onclick = "history.back()">
+  </form>
+
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>PreNom</th>
+      <th>Nom</th>
+      <th>Action</th>
+    </tr>
+    {% for row in liste %}
+      <tr>
+        <td style="color:black;">{{ row.0 }}</td>
+        <td style="color:black;">{{ row.1 }}</td>
+        <td> <a href="/infoseance/{{ row.4}}" class="btn btn-primary pullright">Voir Evolution Seance</a> </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

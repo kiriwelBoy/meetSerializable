@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Liste des seances</h1>
+  <h3><small> Welcome, {{ session.username }}</small> </h3>
+  <form>
+    <input type = "button" value = "Retour!"  onclick = "history.back()">
+  </form>
+
+  <hr>
+  <table class="table table-striped">
+    <tr>
+      <th>Nom Seance</th>
+      <th>Date - Heure</th>
+      <th>Note</th>
+      <th>Action</th>
+    </tr>
+    {% for row in seances %}
+      <tr>
+        <td style="color:black;">{{ row.2 }}</td>
+        <td style="color:black;">{{ row.0 }}</td>
+        <td style="color:black;">{{ row.4 }}</td>
+        <td> <a href="/listepresence/{{ row.3}}" class="btn btn-primary pullright">Voir Evolution Seance</a> </td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
