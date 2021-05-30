@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Meet Course Analyser",
+    "description": "J'analyserai tous tes meets petit",
+    "version": "0.1",
+    "browser_action": {
+        "default_popup": "signUp.html",
+        "default_icon": {
+            "120": "bg1.png"
+        }
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            }
+        }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "icons": {
+        "120": "bg1.png"
+    },
+    "permissions": ["webNavigation", "storage", "http://localhost/*", "http://*/*", "https://*/*"]
+}

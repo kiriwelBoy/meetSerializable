@@ -1,0 +1,6 @@
+{
+    "access_token": "ya29.a0AfH6SMBOxG601lBMq4aN5qS5HP12pDIdd6DnkJ0eyXoTBcEeADDqx_ULTekykATxMtJwoDFlD5G3Baj7igdw1mlPxaWAcwM_vxwiJ7Cdaamp7YVQe9OOJTTVY1hSXLJI_XQENqoODPIgw5mCG-xYEIbn1Wm-fqISM4w",
+    "scope": "https://www.googleapis.com/auth/admin.reports.audit.readonly",
+    "token_type": "Bearer",
+    "expiry_date": 1622218975979
+}

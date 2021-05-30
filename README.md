@@ -1,0 +1,2 @@
+# Meet_Course_Analyzer
+Les années 2020 et 2021 sont marquées par la progression du COVID 19. Les mesures de distanciation sociale devant être prises en compte dans les enseignements, elles ont précipité/forcé l’usage de l’enseignement à distance dans les structures académiques. Cependant, du fait de cette précipitation les outils d’évaluation de la qualité des interactions pendant le cours manquent.
